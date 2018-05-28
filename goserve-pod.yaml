@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: goserve
+spec:
+  containers:
+  - image: mleybourne/goserve
+    name: goserve
+    ports:
+    - containerPort: 8081
+      protocol: TCP
